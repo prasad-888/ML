@@ -1,0 +1,55 @@
+📘 What is a Learning Curve?
+A learning curve is a plot that shows how your model’s performance changes with respect to the number of training examples.
+
+It helps you understand:
+
+Whether your model is overfitting or underfitting
+
+Whether more training data could improve performance
+
+If your model is converging properly
+----------------------------------------------------------------------------------------------
+📊 Axes of a Learning Curve:
+| Axis       | Description                                  |
+| ---------- | -------------------------------------------- |
+| **X-axis** | Number of training samples (increasing size) |
+| **Y-axis** | Model performance (accuracy, loss, etc.)     |
+
+Usually, two curves are plotted:
+
+Training score (on training data)
+
+Validation score (on unseen/validation data)
+----------------------------------------------------------------------------------------------
+📈 Interpreting the Learning Curve
+1. High Bias (Underfitting):
+Both training and validation scores are low and close together.
+
+Model is too simple to capture patterns.
+
+2. High Variance (Overfitting):
+Training score is high, but validation score is low.
+
+Model is too complex, performs well on training but poorly on new data.
+
+3. Good Fit:
+Training and validation scores are high and close to each other.
+
+Indicates generalization.
+
+------------------------------------------------------------------------------------------------
+🧠 Why Learning Curves Matter?
+| Benefit               | Use Case                                                 |
+| --------------------- | -------------------------------------------------------- |
+| Diagnose model issues | Overfitting vs. Underfitting                             |
+| Improve performance   | Know when to collect more data                           |
+| Compare models        | Which algorithm generalizes better                       |
+| Debug learning        | Understand if model is learning too slowly or plateauing |
+
+--------------------------------------------------------------------------------------------------
+🛠️ Tips for Better Learning Curves
+Use cross-validation for smoother and more reliable curves.
+
+Plot training size vs both accuracy and loss for deeper insight.
+
+Normalize features for faster convergence and more meaningful curves.

@@ -1,0 +1,26 @@
+🧠 When to Choose Precision or Recall
+✅ Choose Precision when:
+False Positives are costly
+
+You want to be very sure about positive predictions
+
+📌 Examples:
+Spam detection: You don’t want to misclassify important emails as spam.
+
+Medical diagnosis for rare diseases: If you predict someone has cancer, you want high certainty.
+
+Fraud detection: Don't falsely accuse legitimate transactions.
+
+✅ Choose Recall when:
+False Negatives are costly
+
+You want to catch all actual positives, even if it means some false alarms
+
+📌 Examples:
+Cancer screening: Better to flag someone incorrectly than to miss a real case.
+
+Security alerts: Catch all potential intrusions, even if some are false.
+
+Search engines: Show all possibly relevant documents (even if some are less accurate).
+
+⚖️ When You Need a Balance: Use F1-Score
